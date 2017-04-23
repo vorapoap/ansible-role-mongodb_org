@@ -12,3 +12,6 @@
   rpm_key:
     key: "{{ mongodb_org_repo_gpg_key }}"
     state: present
+    
+- name: "Installing MongoDB"
+  yum: name=mongo state=present
