@@ -14,4 +14,4 @@
     state: present
     
 - name: "Installing MongoDB"
-  yum: name=mongo state=present
+  yum: name=mongo state=present enablerepo=mongodb-org-3.4
